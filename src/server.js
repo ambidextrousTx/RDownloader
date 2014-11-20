@@ -12,6 +12,11 @@ app.get('/', function(request, response) {
     response.render('index.ejs', {title: 'All is fine and dandy'});
 });
 
+app.post('/fetch', function(request, response) {
+    response.send('<h1>Work in progress!</h1>');
+
+});
+
 app.get('/*', function(request, response) {
     response.render('error.ejs', {title: 'Uh oh, something went awry'});
 });
